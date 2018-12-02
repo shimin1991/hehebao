@@ -1,0 +1,29 @@
+@charset 'utf-8';
+/*瀛椾綋*/
+/*@font-face {
+	font-family: "FZLTXHK";
+	src: url('webfont/FZLTXHK.eot'); 
+	src: url('webfont/FZLTXHK.eot?#iefix') format('embedded-opentype'),
+		 local("webfont/FZLTXHK"),
+		 url("webfont/FZLTXHK.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}*/
+/* CSS reset */
+body{position:relative;background-color: #fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;font-family:"Microsoft Yahei",arial,'FZLTXHK',"Hiragino Sans GB",sans-serif;font-size:14px}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+a{text-decoration:none; color:#252525; outline:none;}/*姝ゅ寰呮坊鍔犻粯璁ら摼鎺ラ鑹�*/
+var,em,strong{font-style:normal;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;color: #252525;}
+q:before,q:after{content:'';}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:14px;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+.clearfix:after {content: "\200B";display: block;height: 0;overflow: hidden;clear: both;}
+.clearfix {*zoom: 1;}
+a {transition: all 0.3s};
