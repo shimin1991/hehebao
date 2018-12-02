@@ -166,27 +166,8 @@ $(function(){
     });
 
     // 閫傞厤杞﹀瀷鈥斺€旈紶鏍囩Щ鍏ュ嚭鐜板叿浣撲俊鎭�
-    $('.carlist li').click(function(){
-    	var posY = $(this).offset().top;
-    	var posX = $(this).offset().left;
-    	$('.car-box').toggle().css({
-    		left:posX+50,
-			top:posY-155
-		});
-		$(this).mouseleave(function(){
-			$('.car-box').hide();
-		});
-    });
-
+  
     // 閿氱偣瀵艰埅
-    $('.clslist a').click(function(){
-    	var navText = $(this).text();
-    	$('.models-list .carlist h3').each(function(){
-    		if($(this).text() == navText) {
-    			var scrollT = parseInt($(this).position().top);
-    			$('body, html').animate({scrollTop: scrollT});
-    		}
-    	});
-    });
+  
 
 })
