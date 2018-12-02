@@ -13,6 +13,7 @@ $(window).load(function(){
 	$(window).scroll(function(){
 		wH = $(window).height()*.35
 		// 绗簩灞忓姩鐢绘晥鏋�
+		
 		if($(document).scrollTop() >= (922-wH)) {
 			$(".screen-sec-con").animate({
 				top: 0,
@@ -44,14 +45,14 @@ $(window).load(function(){
 				top : "0px"
 			},500);
 		}
-		// 绗簲灞忓姩鐢绘晥鏋�
+	  //5
 		if($(document).scrollTop() >= (3172-wH)) {
 			$(".screen-fifth h3").animate({
 				top : 0,
 				opacity:"1"
 			},1000)
 		}
-		// 绗叚灞忓姩鐢绘晥鏋�
+		// 6
 		if($(document).scrollTop() >= (4022-wH)) {
 			$(".sixth-con").animate({
 				top : 0,
@@ -72,28 +73,28 @@ $(window).load(function(){
 				top:"4px"
 			},500)
 		}
-		// 绗叚灞�2鍔ㄧ敾鏁堟灉
+		// 6-2
 		if($(document).scrollTop() >= (4722-wH)) {
 			$(".screen-sixth-t h3").animate({
 				top : 0,
 				opacity:"1"
 			},1000)
 		}
-		// 绗竷灞忓姩鐢绘晥鏋�
+		// 7
 		if($(document).scrollTop() >= (5572-wH)) {
 			$(".seventh-con").animate({
 				top : 0,
 				opacity:"1"
 			},1000).next().addClass("on");
 		}
-		// 绗竷灞�2鍔ㄧ敾鏁堟灉
+		// 7-2
 		if($(document).scrollTop() >= (6272-wH)) {
 			$(".screen-seventh-t h3").animate({
 				top : 0,
 				opacity:"1"
 			},1000)
 		}
-		// 绗叓灞忓姩鐢绘晥鏋�
+		// 8
 		if($(document).scrollTop() >= (7122-wH)) {
 			$(".eighth-con").animate({
 				top : 0,
@@ -109,7 +110,7 @@ $(window).load(function(){
 				opacity:"1"
 			},700)
 		}
-		// 绗節灞忓姩鐢绘晥鏋�
+		//9
 		if($(document).scrollTop() >= (7822-wH)) {
 			$(".screen-nin-con").addClass("on").css({
 				"opacity" : "1"
@@ -140,24 +141,29 @@ $(window).load(function(){
 
 
 $(function(){
-
-
+	$(window).load(function(){
+		$(".download-btn>div").hover(function(){
+			$(this).children("ul").stop().slideToggle();
+		})
+	});
+ 
 	// 鍥炲埌椤堕儴
 	var winH = $(window).height();
-	var winW = $(window).width();
+	var winW = $(window).width();  
+	console.log(winH)
 	$('.to-top').css({
 		top: winH-200+'px'
 	});
-	// 濡傛灉褰撳墠绐楀彛鍙鍖哄煙澶т簬1600鏀瑰彉鍥炬爣鐨勫彸杈硅窛
+
 	if(winW > 1600) {
 		$('.to-top').css({
 			right:'200px'
 		});
 	}
 	$(window).scroll(function(){
-        //鑾峰彇绐楀彛鐨勬粴鍔ㄦ潯鐨勫瀭鐩翠綅缃�
+    
         var scrollH = $(window).scrollTop();
-        //褰撶獥鍙ｇ殑婊氬姩鏉＄殑鍨傜洿浣嶇疆澶т簬鏌愪竴涓€兼椂鏄剧ず鍑烘潵锛屽惁鍒欓殣钘�
+     
         if( scrollH > winH){
             $(".to-top").show();
         }else{
@@ -165,9 +171,7 @@ $(function(){
         };
     });
 
-    // 閫傞厤杞﹀瀷鈥斺€旈紶鏍囩Щ鍏ュ嚭鐜板叿浣撲俊鎭�
-  
-    // 閿氱偣瀵艰埅
+ 
   
 
 })
